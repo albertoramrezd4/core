@@ -381,22 +381,18 @@ Scatter.prototype = scatter.prototype = {
       }else{        
         n.color = '#ccc';
       }
-
       return n;
     }
 
-    
-            
-
-
     vm.redraw();
 
-
+    vm._chart.dispatch.on("load.test", vm._config.events.test(axis,value));
   },
   redraw: function(){
     var vm = this;
     vm._chart.destroy(); 
     vm.generate();
+    
   }
 }
 

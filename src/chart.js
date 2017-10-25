@@ -36,7 +36,7 @@ function Chart(config) {
 }
 
 Chart.prototype = chart.prototype = {
-	'dispatch': d3.dispatch("load", "change"),
+	'dispatch': d3.dispatch("load", "change", "select"),
 	'draw' : function(){
 		var vm = this;
 

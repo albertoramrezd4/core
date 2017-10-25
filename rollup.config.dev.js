@@ -5,5 +5,5 @@ export default {
   format: "umd",
   moduleName: "dbox",
   plugins: [npm({jsnext: true})],
-  dest: "../d4pkg-develop/src/dbox/build/dbox.js"
+  dest: "../../gire-mapa-muerte-materna-swiip/src/dbox/build/dbox.js"
 };
